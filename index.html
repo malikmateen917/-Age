@@ -18,4 +18,16 @@
         <input type="range" class="range" value="0" min="0" max="100" onmousemove="rangeSlider(this.value)" onchange="rangeSlider(this.value)">
     </div>
     </section>
-    
+    <script>
+        function rangeSlider(value){
+            document.getElementById('rangeValue').innerHTML = value;
+
+
+            document.getElementById('fillRangeTopLeft').style.width = +value/2+'%';
+            document.getElementById('fillRangeTopRight').style.height = +value/2+'%';
+            document.getElementById('fillRangeBottomLeft').style.height = +value/2+'%';
+            document.getElementById('fillRangeBottomRight').style.width = +value/2+'%';
+        }
+    </script>
+</body>
+</html>
