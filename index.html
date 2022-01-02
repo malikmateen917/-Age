@@ -7,3 +7,15 @@
     <title>Glass Shutter</title>
     <link rel="stylesheet" href="style.css">
 </head>
+<body>
+    <section>
+        <div>
+        <h2 id="rangeValue">0</h2>
+        <div id="fillRangeTopLeft"></div>
+        <div id="fillRangeTopRight"></div>
+        <div id="fillRangeBottomLeft"></div>
+        <div id="fillRangeBottomRight"></div>
+        <input type="range" class="range" value="0" min="0" max="100" onmousemove="rangeSlider(this.value)" onchange="rangeSlider(this.value)">
+    </div>
+    </section>
+    
